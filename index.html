@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="container" id="headerContainer">
+        <div id="title">
+            <div id="emoji">💪</div>
+            <h1>FitTrack Pro</h1>
+        </div>
+        <div id="buttonContainer">
+            <button id="StreakCountBtn">
+                🔥0 Days Streak
+            </button>
+            <button id="EmojiButton">
+                😊
+            </button>
+        </div>
+    </header>
+    <main class="container">
+        <div id="mainContainer" style="color :aliceblue">
+            <div id="WorkoutInfos">
+                <div class="info-card">
+                    <p class="info-title">TOTAL WORKOUTS</p>
+                    <h2 id="totalWorkoutCount" class="info">0</h2>
+                    <p class="cheers">↗️Keep Going</p>
+                </div>
+                <div class="info-card">
+                    <p class="info-title">CALORIES BURNED</p>
+                    <h2 id="caloriescount" class="info">0</h2>
+                    <p class="cheers">↗️Great Progress</p>
+                </div>
+                <div class="info-card">
+                    <p class="info-title">ACTIVE MINUTES</p>
+                    <h2 id="minutescount" class="info">0</h2>
+                    <p class="cheers">↗️Amazing</p>
+                </div>
+            </div>
+            <!--Motivation-->
+            <div id="motivation">
+                <h1 id="motivationTitle">Ready to Crush Your Goals?</h1>
+                <p id="motivationP">Track your progress and stay motivated with every workout!</p>
+                <a href="https://www.youtube.com/watch?v=Tuw8hxrFBH8" target="_blank"><button id="motivationBtn">Get
+                        Motivated</button></a>
+            </div>
+            <h2 id = "mainTitle">Today's Workout</h2>
+            <!--Workout Card Container-->
+            <div id = "cardContainer">
+                <div class = "card">
+                   <button class = "exerciseType">STRENGTH</button>
+                   <h1 class = "exerciseTitle">Push-Up Challenge</h1>
+                   <p class = "details">Build upper body strength with
+progressive push-up variations</p>
+                   <hr>
+                   <div class = "infoContainer">
+                    <p class = "exerciseInfo">⏱️15 mins • 🔥85 cal</p>
+                    <button class = "activeBtn" id = "activeBtn1"  data-time = "15" data-calories = "85" data-title = "Push-Up Challenge">Active</button>
+                   </div>
+                </div>
+
+                <div class = "card">
+                   <button class = "exerciseType">CARDIO</button>
+                   <h1 class = "exerciseTitle">High-Intensity Sprints</h1>
+                   <p class = "details">Boost your metabolism with intense
+interval sprints</p>
+                   <hr>
+                   <div class = "infoContainer">
+                    <p class = "exerciseInfo">⏱️20 mins • 🔥220 cal</p>
+                    <button class = "activeBtn" id = "activeBtn2" data-time = "20" data-calories = "220" data-title="High-Intensity Sprints">Active</button>
+                   </div>
+                </div>
+                <div class = "card">
+                   <button class = "exerciseType">CORE</button>
+                   <h1 class = "exerciseTitle">Abs Destroyer</h1>
+                   <p class = "details">Target your core with planks,
+crunches, and leg raises</p>
+                   <hr>
+                   <div class = "infoContainer">
+                    <p class = "exerciseInfo">⏱️12 mins • 🔥65 cal</p>
+                    <button class = "activeBtn" id = "activeBtn3" data-time = "12" data-calories = "65" data-title="Abs Destroyer">Active</button>
+                   </div>
+                </div>
+                <div class = "card">
+                   <button class = "exerciseType">FLEXIBILITY</button>
+                   <h1 class = "exerciseTitle">Yoga Flow Session</h1>
+                   <p class = "details">Improve flexibility and reduce stress
+with mindful movements</p>
+                   <hr>
+                   <div class = "infoContainer">
+                    <p class = "exerciseInfo">⏱️30 mins • 🔥120 cal</p>
+                    <button class = "activeBtn" id = "activeBtn4" data-time = "30" data-calories = "120" data-title="Yoga Flow Session">Active</button>
+                   </div>
+                </div>
+                <div class = "card">
+                   <button class = "exerciseType">STRENGTH</button>
+                   <h1 class = "exerciseTitle">Leg Day Power</h1>
+                   <p class = "details">Squat, lunge, and jump your way to
+stronger legs</p>
+                   <hr>
+                   <div class = "infoContainer">
+                    <p class = "exerciseInfo">⏱️25 mins • 🔥180 cal</p>
+                    <button class = "activeBtn" id = "activeBtn5" data-time = "25" data-calories = "180" data-title = "Leg Day Power">Active</button>
+                   </div>
+                </div>
+                <div class = "card">
+                   <button class = "exerciseType">CARDIO</button>
+                   <h1 class = "exerciseTitle">Jump Rope Blitz</h1>
+                   <p class = "details">Quick and effective cardio to get
+your heart pumping</p>
+                   <hr>
+                   <div class = "infoContainer">
+                    <p class = "exerciseInfo">⏱️10 mins • 🔥140 cal</p>
+                    <button class = "activeBtn" id = "activeBtn6" data-time = "10" data-calories = "140" data-title="Jump Rope Blitz">Active</button>
+                   </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <div id = "sideBarContainer" style = "color : aliceblue">
+           <div id = "totalRepCouter">
+            <h2 id = "repCounterTitle">Total Reps Completed</h2>
+            <p id = "repCounter">0</p>
+           </div>
+           <h2 id = "notificationTitle">📊Activity Feed</h2>
+           <div id = "notification">
+            <!-- <div class = "activity"><p class = "activityContent">blah blah blah</p></div>  you need this in using notification-->
+           </div>
+        </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
